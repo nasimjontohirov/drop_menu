@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DropDownMenu</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <body>
+      <nav class="sidebar">
+        <div class="text">Drop Menu</div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li>
+            <a href="#" class="feat-btn"
+              >Login<span class="fas fa-caret-down"></span
+            ></a>
+            <ul class="feat-show">
+              <li href="#">Sing In</li>
+              <li href="#">Sing Up</li>
+            </ul>
+          </li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </nav>
+      <script>
+        $(".feat-btn").click(function () {
+          $(".nav ul .feat-show").toggleClass("show");
+        });
+      </script>
+    </body>
+  </head>
+</html>
